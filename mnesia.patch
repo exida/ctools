@@ -1,0 +1,11 @@
+--- a/etc/vm.args
++++ b/etc/vm.args
+@@ -25,5 +25,7 @@
+ ## Run code at startup.
+ -eval "application:start(nitrogen)"
+ 
++## Mnesia directory
++-mnesia dir '"data/MemtoolsMnesia"'
+ 
+ -setcookie iZm8HC35VGhXqCi1ner0XLpEqmAUEcDcGp37owlbRoVPAynllTrEcIQ5GiWKI9
+

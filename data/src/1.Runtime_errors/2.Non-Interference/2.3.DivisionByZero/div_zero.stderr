@@ -1,0 +1,4 @@
+/home/mszczep1/workspace/ctools/src/2.Non-Interference/2.3.DivisionByZero/div_zero.c: In function ‘divide_by_zero_int_const’:
+/home/mszczep1/workspace/ctools/src/2.Non-Interference/2.3.DivisionByZero/div_zero.c:8:24: warning: division by zero [-Wdiv-by-zero]
+   ret = runtime_42_int / 0; // ERROR_LINE
+                        ^

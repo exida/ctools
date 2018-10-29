@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export PATH="PREFIX/data/bin:$PATH"
+PREFIX/bin/nitrogen $@

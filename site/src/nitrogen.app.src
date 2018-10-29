@@ -1,0 +1,9 @@
+{application, nitrogen,
+ [
+  {description, "Exida Tools Comparison"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [kernel, stdlib]},
+  {mod, { nitrogen_app, []}},
+  {env, []}
+ ]}.

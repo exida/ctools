@@ -1,0 +1,19 @@
+tr.Error {
+  background-color: red;
+}
+
+tr.Warning {
+  background-color: orange;
+}
+
+tr.Note {
+  background-color: lightblue;
+}
+
+tr.Info {
+  background-color: white;
+}
+
+tr.header {
+  background-color: lightgreen;
+}

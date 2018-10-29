@@ -1,0 +1,33 @@
+/* Copyright 2015 Exida */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "Std_Types.h"
+
+#include "limits.h"
+
+uint32_t integer32_builtin_overflow_add(void)
+{
+    uint32_t a = 0xFFFFFFFFU;
+    uint32_t b = 0xFFFFFFFFU;
+
+    uint32_t ret;
+  
+    if (__builtin_add_overflow(a, b, &ret)) {
+        printf("builtin_uadd detected overflow\n");   
+
+    } else {
+        printf("builtin_uadd has not detected overflow\n");
+    }
+
+
+    return ret;
+}
+
+int main(int runtime_1_int, char **argv)
+{
+    (void) integer32_builtin_overflow_add();
+
+    return 0;
+}
