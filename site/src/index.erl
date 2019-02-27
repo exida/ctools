@@ -144,7 +144,8 @@ about_page() -> [
                 #listitem{ body=tool_sparse:get(version)},
                 #listitem{ body=tool_smatch:get(version)},
                 #listitem{ body=tool_coccinelle:get(version)},
-                #listitem{ body=tool_clang_tidy:get(version)}
+                #listitem{ body=tool_clang_tidy:get(version)},
+                #listitem{ body=tool_coverity:get(version)}
                      ]
             }
         ]},
@@ -161,6 +162,8 @@ about_page() -> [
             }
         ]}]
     },
+    #p{},
+    "Coverity scans are performed externally, the tool is not integrated into the ctools framewo    rk, but results from the evaluation are integrated into the comparison chart",
     #p{},
     "Tools that have been checked, but are currently out-of-scope:",
     #list { numbered=true, body=[

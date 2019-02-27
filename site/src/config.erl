@@ -23,7 +23,8 @@ all_modules() -> [
     tool_sparse,
     tool_smatch,
     tool_coccinelle,
-    tool_clang_tidy
+    tool_clang_tidy,
+	tool_coverity
 		 ].
 
 %   	 tool_oclint,

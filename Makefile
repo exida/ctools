@@ -12,7 +12,6 @@ nitrogen:
 	git -C nitrogen reset --hard HEAD
 
 ctools:
-	chmod +x ctools.sh
 	rm -r "$(PROJECT)/site"
 	cp -r ./site "$(PROJECT)"
 	cp -r ./data "$(PROJECT)"
@@ -21,6 +20,7 @@ ctools:
 
 launcher:
 	sed -e "s|PREFIX|$(realpath $(PROJECT))|g" ctools.sh.in > ctools.sh
+	chmod +x ctools.sh
 
 clean:
 	rm -rf nitrogen
